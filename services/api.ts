@@ -1,5 +1,5 @@
 import axios from "axios"
 
 export const api = axios.create ({
-    baseURL: "https://api-mongo-db+yp8x-onrender.com"
+    baseURL: "https://api-mong-db-yp8x.onrender.com"
 });
