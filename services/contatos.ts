@@ -22,3 +22,10 @@ export const getContatos = async () => {
     return await api.delete(`/contatos/${id}`);
   };
   
+  export const updateContato = async ( 
+    id: String,
+    contato: Partial<Contato>
+
+  ) => {
+    return await api.put('/contatos/${id}');
+}
