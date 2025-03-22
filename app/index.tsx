@@ -57,8 +57,10 @@ export default function HomeScreen() {
 
               <Link href={{ pathname: "/editar/[id]",
                 params: { id: item._id }
-              }}>
-                <Text style={{ color: "blue", marginTop: 5 }}>Editar</Text>
+                }}
+                style={styles.botaoAdicionar}
+              >
+                <Text style={{ color: "white", marginTop: 5}}>Editar</Text>
               </Link>
 
               <Link href={{ pathname: "/detalhes/[id]",
@@ -66,7 +68,7 @@ export default function HomeScreen() {
                 }}
                 style={styles.botaoAdicionar}
               >
-                <Text style={{ color: "navy", marginTop: 5 }}>Detalhes</Text>
+                <Text style={{ color: "white", marginTop: 5 }}>Detalhes</Text>
               </Link>
 
             </View>
@@ -87,6 +89,6 @@ const styles = StyleSheet.create({
   semFoto: { width: 50, height: 50, justifyContent: "center", alignItems: "center", backgroundColor: "#ddd", borderRadius: 25 },
   info: { marginLeft: 10 },
   nome: { fontWeight: "bold" },
-  botaoAdicionar: { backgroundColor: "blue", padding: 10, marginTop: 20, borderRadius: 5, alignItems: "center" },
+  botaoAdicionar: { backgroundColor: "blue", padding: 10, marginTop: 20, borderRadius: 5, alignItems: "center", textAlign: 'center' },
   textoBotao: { color: "white", fontSize: 16 },
 });
