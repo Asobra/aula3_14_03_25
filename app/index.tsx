@@ -60,6 +60,15 @@ export default function HomeScreen() {
               }}>
                 <Text style={{ color: "blue", marginTop: 5 }}>Editar</Text>
               </Link>
+
+              <Link href={{ pathname: "/detalhes/[id]",
+                params: { id: item._id }
+                }}
+                style={styles.botaoAdicionar}
+              >
+                <Text style={{ color: "navy", marginTop: 5 }}>Detalhes</Text>
+              </Link>
+
             </View>
           </View>
         )}
